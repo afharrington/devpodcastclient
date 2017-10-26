@@ -176,30 +176,11 @@ a {
 .content-container {
   margin-top: 50px; }
 
-.recent-podcast {
-  cursor: pointer;
-  color: white;
-  margin: 15px;
-  font-family: Roboto;
-  text-align: center;
-  width: 250px;
-  height: 350px; }
-  .recent-podcast img {
-    width: 250px;
-    transition: all .5s ease; }
-  .recent-podcast img:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
-
-.recent-podcast-show {
-  margin-top: 5px;
-  margin-bottom: 8px;
-  font-size: 14px; }
-
-.recent-podcast-episode {
-  margin-bottom: 5px;
-  text-transform: capitalize;
-  overflow: hidden;
-  text-overflow: ellipsis; }
-
-.recent-podcast-date {
-  font-size: 14px; }
+.header {
+  width: 100%;
+  text-align: center; }
+  .header h1 {
+    margin-bottom: 50px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem; }

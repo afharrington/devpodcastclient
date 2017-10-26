@@ -8,6 +8,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 // Views
 import Home from './views/Home';
 import Show from './views/Show';
+import Browse from './views/Browse';
 
 // Components
 import Nav from './components/Nav';
@@ -24,6 +25,7 @@ class App extends Component {
             <Nav/>
             <Switch>
               <Route exact path='/' render={props => <Home {...props} /> } />
+              <Route exact path='/browse' component={Browse} />
               <Route exact path='/show/:id' render={props => <Show {...props} /> } />
             </Switch>
           </div>

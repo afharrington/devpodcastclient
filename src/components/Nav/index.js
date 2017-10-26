@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
 import AnimateHeight from 'react-animate-height';
+import Search from '../Search';
 import { Link } from 'react-router-dom';
 
 import './nav.css';
@@ -29,9 +30,11 @@ class Nav extends Component {
 
     return (
       <div className='nav'>
+        <Search/>
         <FontAwesome name='bars' className='hamburger' onClick={ this.toggleHeight.bind(this) }/>
         <div className='top-nav-links-container'>
           <Link to='/'><p>Home</p></Link>
+          <Link to='/browse'><p>Browse</p></Link>
           <p>Discover</p>
           <p>About</p>
         </div>
@@ -41,6 +44,7 @@ class Nav extends Component {
           className='dropdown-menu'
           >
             <Link to='/'><p>Home</p></Link>
+            <Link to='/browse'><p>Browse</p></Link>
             <p>Discover</p>
             <p>About</p>
         </AnimateHeight>

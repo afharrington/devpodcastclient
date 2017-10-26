@@ -1,0 +1,38 @@
+@import '../../styles/styles.scss';
+
+.search-container {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+
+  .search-input {
+    height: 25px;
+    width: 75px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    transition: width .3s ease;
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    font-size: 18px;
+  }
+
+  .search-input:focus {
+    width: 150px;
+  }
+
+  .search-input-active {
+    width: 150px;
+  }
+}
+
+.search-button, .search-button-active {
+  height: 25px;
+  display: none;
+}

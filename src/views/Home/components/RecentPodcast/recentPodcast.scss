@@ -19,7 +19,6 @@
   }
 }
 
-
 .recent-podcast-show {
   margin-top: 5px;
   margin-bottom: 8px;
@@ -28,8 +27,7 @@
 
 .recent-podcast-episode {
   margin-bottom: 5px;
-  text-transform: uppercase;
-  height: 40px;
+  text-transform: capitalize;
   overflow: hidden;
   text-overflow: ellipsis;
 }

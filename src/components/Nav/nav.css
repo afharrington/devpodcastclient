@@ -198,11 +198,11 @@ a {
   top: 40%;
   right: 5%;
   display: flex; }
-  .top-nav-links-container p, .top-nav-links-container a, .top-nav-links-container a:visited {
+  .top-nav-links-container p, .top-nav-links-container a {
     color: white;
     cursor: pointer;
     font-family: "PT Sans", sans-serif;
-    margin-left: 50px;
+    margin-left: 20px;
     font-size: 16px;
     text-transform: uppercase;
     padding-bottom: 5px; }

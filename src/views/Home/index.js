@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchRecent, fetchShow } from '../../actions/actions.js';
 import RecentPodcast from './components/RecentPodcast';
-
+import Header from '../../components/Header';
 import './home.css';
 
 class Home extends Component {
@@ -22,6 +22,7 @@ class Home extends Component {
   render() {
     return (
       <div className='home content-container'>
+        <Header title={'Recent Episodes'}/>
         <div className='recent-podcast-container'>
           {this.renderRecent()}
         </div>

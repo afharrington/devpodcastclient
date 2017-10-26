@@ -15,8 +15,8 @@ class RecentPodcast extends Component {
         <div className='recent-podcast'>
           <img src={podcast.image_url} alt={`${podcast.show_title}} cover art`}/>
           <div className='recent-podcast-show'>{podcast.show_title}</div>
-          <div className='recent-podcast-episode'>Placeholder for episode title</div>
-          <Moment className='recent-podcast-date' format='LL' date={podcast.pod_release_date}/>
+          <div className='recent-podcast-episode'>{podcast.episodes[0].title}</div>
+          <Moment className='recent-podcast-date' format='LL' date={podcast.published_date}/>
         </div>
       </Link>
     )
