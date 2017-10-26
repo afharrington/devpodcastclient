@@ -1,0 +1,56 @@
+@import '../../../../styles/styles.scss';
+
+.audio-player {
+  cursor: pointer;
+  width: 50px;
+}
+
+.audio-player-container {
+  height: 20px;
+  width: 50px;
+  font-size: 20px;
+}
+
+.audio-player-controls {
+  display: flex;
+
+  .play-button, .pause-button {
+    margin-right: 10px;
+    transition: all .5s ease;
+
+    @media (max-width: 375px) {
+      margin-left: 12px;
+    }
+  }
+
+  .pause-button {
+    color: $accent-blue;
+  }
+
+  input {
+    width: 75px;
+
+    @media (max-width: 375px) {
+      display: none;
+    }
+
+    @media (min-width: 700px) {
+      width: 150px;
+    }
+  }
+}
+
+.audio-player-duration {
+  display: flex;
+  font-size: 12px;
+  margin-left: 60%;
+
+  span {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  @media (max-width: 375px) {
+    display: none;
+  }
+}

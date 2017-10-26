@@ -1,0 +1,55 @@
+@import '../../../../styles/styles.scss';
+
+.episodes-list {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.episodes-list-header {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  font-family: $header-font;
+  margin-bottom: 10px;
+}
+
+
+.episodes-list-items-container {
+  margin-top: 15px;
+}
+
+.episodes-list-title {
+  cursor: pointer;
+  width: 50%;
+  margin-right: 2.5%;
+  text-align: left;
+  text-overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.episodes-list-aired {
+  width: 15%;
+  margin-right: 5%;
+  text-align: left;
+}
+
+.episodes-list-listen {
+  width: 30%;
+  text-align: left;
+}
+
+.more {
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+
+  p {
+    padding: 5px;
+    text-align: center;
+    background-color: #00B8D4;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,70 @@
+@import '../../styles/styles.scss';
+
+.nav {
+  position: relative;
+  background-color: black;
+  height: 75px;
+  text-align: right;
+  z-index: 1000;
+}
+
+.hamburger {
+  cursor: pointer;
+  color: white;
+  line-height: 75px;
+  margin-right: 20px;
+  font-size: 32px;
+
+  @media screen and (min-width: 600px) {
+    display: none;
+  }
+}
+
+.top-nav-links-container {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  display: flex;
+
+  p, a, a:visited {
+    color: white;
+    cursor: pointer;
+    font-family: $header-font;
+    margin-left: 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+  }
+
+  p:hover {
+    border-bottom: 3px solid $accent-blue;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}
+
+.dropdown-menu {
+  background-color: white;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  height: 0;
+
+  p {
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 15px;
+    color: $dark-gray;
+    text-transform: uppercase;
+    font-family: $header-font;
+  }
+
+  p:hover {
+    background-color: $accent-blue;
+  }
+}

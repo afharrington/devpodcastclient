@@ -1,0 +1,39 @@
+@import '../../../../styles/styles.scss';
+
+.recent-podcast {
+  cursor: pointer;
+  color: white;
+  margin: 15px;
+  font-family: Roboto;
+  text-align: center;
+  width: 250px;
+  height: 350px;
+
+  img {
+    width: 250px;
+    transition: all .5s ease;
+  }
+
+  img:hover {
+    box-shadow: $large-shadow;
+  }
+}
+
+
+.recent-podcast-show {
+  margin-top: 5px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.recent-podcast-episode {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recent-podcast-date {
+  font-size: 14px;
+}
